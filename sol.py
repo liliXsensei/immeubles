@@ -10,6 +10,11 @@ def sol(y_sol):
         y_sol : ordonnée du sol du la rue
     Cete fonction dessine un trait horizontale de 3 pixels d'épaisseur
     '''
+    turtle.penup()
+    turtle.sety(y_sol)
+    turtle.width(3)
+    turtle.pendown()
+    turtle.forward(100)
 
     pass
 
