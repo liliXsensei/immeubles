@@ -22,8 +22,7 @@ def rectangle(x,y,w,h):
     turtle.left(90) 
     turtle.forward(h) 
     turtle.left(90) 
-    turtle.forward(w // 2) 
-    pass 
+    turtle.forward(w // 2)
 
  
 
