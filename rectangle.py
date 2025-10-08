@@ -10,10 +10,28 @@ def rectangle(x,y,w,h):
     sur le côté en bas au milieu
     '''
 
-    pass
 
+    turtle.penup() 
+    turtle.goto(x, y) 
+    turtle.pendown() 
+    turtle.forward(w // 2) 
+    turtle.left(90) 
+    turtle.forward(h) 
+    turtle.left(90) 
+    turtle.forward(w) 
+    turtle.left(90) 
+    turtle.forward(h) 
+    turtle.left(90) 
+    turtle.forward(w // 2) 
+    pass 
 
-if __name__ == '__main__':
-    rectangle(0,0,150,100)
-    # On ferme la fenêtre s'il y a un clique gauche
-    turtle.exitonclick()
+ 
+
+if __name__ == '__main__': 
+
+    rectangle(0,0,150,100) 
+
+    # On ferme la fenêtre s'il y a un clique gauche 
+
+    turtle.exitonclick() 
+
