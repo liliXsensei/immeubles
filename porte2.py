@@ -22,7 +22,6 @@ def porte2(x,y,couleur):
     turtle.forward(40)
     turtle.left(90)
     turtle.forward(15)
-    pass
 
 if __name__ == '__main__':
     porte2(0,0,"red")
