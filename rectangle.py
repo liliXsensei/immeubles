@@ -25,7 +25,6 @@ def rectangle(x,y,w,h):
     turtle.forward(w // 2)
 
  
-
 if __name__ == '__main__': 
 
     rectangle(0,0,150,100) 
