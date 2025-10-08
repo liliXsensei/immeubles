@@ -12,6 +12,16 @@ def porte2(x,y,couleur):
         La partie rectangulaire a une hauteur de 40 pixels
         La partie semi circulaire a un rayon de 15 pixels
     '''
+    turtle.penup() 
+    turtle.goto(x, y) 
+    turtle.pendown()
+    turtle.forward(15)
+    turtle.left(90)
+    turtle.forward(40)
+    turtle.circle(15, 180, 10)
+    turtle.forward(40)
+    turtle.left(90)
+    turtle.forward(15)
     pass
 
 if __name__ == '__main__':
