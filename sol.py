@@ -16,8 +16,6 @@ def sol(y_sol):
     turtle.pendown()
     turtle.forward(100)
 
-    pass
-
 
 if __name__ == '__main__':
     sol(0)
