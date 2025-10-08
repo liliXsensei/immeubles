@@ -9,3 +9,6 @@ def couleur_aleatoire():
     '''
     couleur = (randint(0,255), randint(0,255), randint(0,255))
     return couleur
+
+if __name__ == "__main__":
+    print(couleur_aleatoire())
