@@ -13,11 +13,12 @@ def toit1(x, y_sol, niveau):
     turtle.penup()
     turtle.setx(x)
     turtle.sety(niveau+(1)*60)
+    turtle.goto(0, 0)
     turtle.pendown()
     turtle.forward(80)
-    turtle.right(45)
-    turtle.forward()
-    pass
+    turtle.goto(x, niveau+(60))
+    turtle.goto(x - (80), niveau)
+    turtle.forward(80)
 
 
 if __name__ == '__main__':
