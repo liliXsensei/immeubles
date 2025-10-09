@@ -13,7 +13,9 @@ def porte2(x,y,couleur):
         La partie semi circulaire a un rayon de 15 pixels
     '''
     turtle.penup() 
-    turtle.goto(x, y) 
+    turtle.goto(x, y)
+    turtle.fillcolor(couleur)
+    turtle.begin_fill()
     turtle.pendown()
     turtle.forward(15)
     turtle.left(90)
@@ -22,6 +24,7 @@ def porte2(x,y,couleur):
     turtle.forward(40)
     turtle.left(90)
     turtle.forward(15)
+    turtle.end_fill()
 
 if __name__ == '__main__':
     porte2(0,0,"red")

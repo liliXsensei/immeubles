@@ -13,6 +13,8 @@ def porte(x,y,couleur):
     turtle.penup() 
     turtle.goto(x, y) 
     turtle.pendown()
+    turtle.fillcolor(couleur)
+    turtle.begin_fill()
     turtle.forward(15)
     turtle.left(90)
     turtle.forward(50)
@@ -22,6 +24,7 @@ def porte(x,y,couleur):
     turtle.forward(50)
     turtle.left(90)
     turtle.forward(15)
+    turtle.end_fill()
 
 
 if __name__ == '__main__':
