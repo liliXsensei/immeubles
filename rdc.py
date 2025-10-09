@@ -16,12 +16,23 @@ def rdc(x, y_sol, c_facade, c_porte):
         D'abord la façade
         Puis les 3 élements : 1 porte et 2 fenêtres disposées au hasard
     '''
-    # Dessine la facade
-    pass
 
-    # Construit les 3 éléments (1 porte et 2 fenetres)
+    facade == c_facade
+    porte == c_porte
+    turtle.setx(x)
+    turtle.sety(y_sol)
+    turtle.color(c_facade)
+    turtle.color(c_porte)
 
-    pass
+
+    positions = [-40, 40 , x]
+    shuffle(positions)
+
+    facade(x, y_sol, c_facade, 0)
+    porte(x + positions[0], y_sol, c_porte)
+    fenetre(x + positions[2], y_sol + 20)
+    fenetre(x + positions[1], y_sol + 20)
+
 
 if __name__ == '__main__':
     rdc(0,0,"red","green")
