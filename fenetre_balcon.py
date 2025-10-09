@@ -35,7 +35,7 @@ def fenetre_balcon(x,y):
     turtle.goto(x-(6), y)
     turtle.pendown()
     turtle.width(3)
-    rectangle(0, 0, 42, 25)
+    rectangle(x, y, 42, 25)
     trait(x1 = x - (15), y1 = (0), x2 = x - (15), y2 = y + (25))
     trait(x1 = x - (9), y1 = (0), x2 = x - (9), y2 = y + (25))
     trait(x1 = x - (3), y1 = (0), x2 = x - (3), y2 = y + (25))
