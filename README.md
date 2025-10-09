@@ -11,9 +11,9 @@ fenêtre -> terminé
 fenêtre_balcon -> en cours (par Clément)
 toit1 -> terminé
 toit2 -> terminé
-toit -> en cours (par Liam)
+toit -> terminé
 couleur_aléatoire -> terminé
-étage -> pas commencé
-rez-de-chaussé -> en cours (par Louise)
+étage -> en cours (par Louise)
+rez-de-chaussé -> en cours (par Liam)
 immeubles -> pas commencé
 main -> pas commencé
