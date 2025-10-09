@@ -8,7 +8,7 @@ porte -> terminé
 porte2 -> terminé
 façade -> terminé
 fenêtre -> terminé
-fenêtre_balcon -> en cours (par Clément)
+fenêtre_balcon -> terminé
 toit1 -> terminé
 toit2 -> terminé
 toit -> terminé
