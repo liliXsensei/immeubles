@@ -4,16 +4,16 @@ un pâté d'immeubles (avec un choix de couleur *possiblement* douteux)
 trait -> terminé
 sol -> terminé
 rectangle -> terminé
-porte -> couleur manquante
-porte2 -> couleur manquante
-façade -> en cours
+porte -> terminé
+porte2 -> terminé
+façade -> terminé
 fenêtre -> terminé
-fenêtre_balcon -> pas commencé
+fenêtre_balcon -> en cours (par Clément)
 toit1 -> terminé
 toit2 -> terminé
-toit -> pas commencé
+toit -> en cours (par Liam)
 couleur_aléatoire -> terminé
 étage -> pas commencé
-rez-de-chaussé -> pas commencé
+rez-de-chaussé -> en cours (par Louise)
 immeubles -> pas commencé
 main -> pas commencé
