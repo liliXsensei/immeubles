@@ -12,7 +12,17 @@ def toit(x, y_sol, niveau):
     Cette fonction dessine au hasard un des 2 types de toit
 
     '''
-    pass
+    turtle.penup()
+    turtle.setx(x)
+    turtle.sety(niveau+(1)*60)
+    turtle.pendown()
+    choix_toit = randint(1,2)
+    if choix_toit == 1:
+        toit1(x, y_sol, niveau)
+    else:
+        toit2(x, y_sol, niveau)
+        
+    
 
 if __name__ == '__main__':
     toit(0,0,0)
