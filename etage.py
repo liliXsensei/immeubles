@@ -18,6 +18,7 @@ def etage(x, y_sol, couleur, niveau):
     Remarque
        Cette fonction dessine un étage d'un immeuble
     '''
+    positions = []
     # dessin des murs
     x_fenetre_1 = 0
     if niveau in [1,2,3,4]:
