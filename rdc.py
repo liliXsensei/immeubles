@@ -1,6 +1,7 @@
 from facade import facade
 from random import shuffle
 from porte import porte
+from porte2 import porte2
 from fenetre import fenetre
 import turtle
 
@@ -24,12 +25,18 @@ def rdc(x, y_sol, c_facade, c_porte):
     turtle.color(c_facade)
     turtle.color(c_porte)
 
-
+    portes = [porte, porte2]
+    shuffle(portes) 
     positions = [-40, 40 , x]
     shuffle(positions)
 
     facade(x, y_sol, c_facade, 0)
-    porte(x + positions[0], y_sol, c_porte)
+
+    if portes[0] == porte:
+        portes[0](x + positions[0], y_sol, c_porte)
+    elif portes[0] == porte2:
+        portes[0](x + positions[0], y_sol, c_porte)
+        
     fenetre(x + positions[2], y_sol + 20)
     fenetre(x + positions[1], y_sol + 20)
 
