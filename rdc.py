@@ -18,12 +18,9 @@ def rdc(x, y_sol, c_facade, c_porte):
         Puis les 3 élements : 1 porte et 2 fenêtres disposées au hasard
     '''
 
-    facade == c_facade
-    porte == c_porte
+
     turtle.setx(x)
     turtle.sety(y_sol)
-    turtle.color(c_facade)
-    turtle.color(c_porte)
 
     portes = [porte, porte2]
     shuffle(portes) 
