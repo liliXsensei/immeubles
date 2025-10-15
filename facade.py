@@ -11,7 +11,9 @@ def facade(x, y_sol, couleur, niveau):
     remarque :
         Facade dessine une facade sans les élements interieurs
     '''
-    y_etage = y_sol
+    if niveau != 1:
+        y_etage = y_sol + 60 * niveau
+    else: y_etage = y_sol
     if niveau not in [0,1,2,3,4]:
         print("Niveau invalide")
     else:
@@ -24,6 +26,6 @@ def facade(x, y_sol, couleur, niveau):
 
 
 if __name__ == '__main__':
-    facade(0,0,"red",1)
+    facade(0,0,"red",3)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
