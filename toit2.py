@@ -12,14 +12,16 @@ def toit2(x, y_sol, niveau):
 
     turtle.penup()
     turtle.setx(x)
-    turtle.sety(niveau+(1)*60)
+    turtle.sety((niveau+1)*60)
     turtle.width(10)
-    turtle.goto(x - 80, niveau + 60)
+    turtle.goto(x - 80, (niveau+1) *60)
     turtle.pendown()
     turtle.forward(160)
 
 
 if __name__ == '__main__':
-    toit2(0,0,0)
+    toit2(0,0,2)
+    toit2(100, 0, 1)
+    toit2(200, 0, 4)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
