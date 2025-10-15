@@ -18,15 +18,26 @@ def etage(x, y_sol, couleur, niveau):
     Remarque
        Cette fonction dessine un étage d'un immeuble
     '''
-    positions = []
+    positions_x = [-40, 40, x]
+    choix = 0 # choisit fenetre ou fenetre balcon
+    indice = 0
+    y_elements = y_sol
     # dessin des murs
-    x_fenetre_1 = 0
     if niveau in [1,2,3,4]:
         for i in range(niveau - 1):
+            shuffle(positions_x)
             facade(x, y_sol, couleur, niveau - 1)
             # dessin des 3 Eléments
-            fenetre(30, 40)
-            fenetre_balcon(30, y_sol)
+            for i in range(3):
+                choix = randint(1, 2)
+                if choix == 1:
+                    fenetre(positions_x[indice], y_sol + 20)
+                elif choix == 2:
+                    fenetre_balcon(positions_x[indice], y_sol)
+                indice += 1
+            y_elements += 60
+            indice = 0
+            
 
 if __name__ == '__main__':
     etage(0,0,"red",2)
