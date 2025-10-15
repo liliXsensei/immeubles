@@ -18,6 +18,8 @@ def main():
     sol(y_sol)
 
     # Dessin des 4 immeubles
+    for i in range(4):
+        pass
 
 
     # On ferme la fenêtre s'il y a un clique gauche
