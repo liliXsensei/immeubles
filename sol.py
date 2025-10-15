@@ -14,7 +14,7 @@ def sol(y_sol):
     turtle.sety(y_sol)
     turtle.width(3)
     turtle.pendown()
-    turtle.forward(100)
+    turtle.forward(400)
 
 
 if __name__ == '__main__':

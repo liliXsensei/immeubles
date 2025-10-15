@@ -12,6 +12,10 @@ def main():
     # On définit la hauteur du sol
     y_sol = -200
     # Dessin du sol de la rue
+    turtle.penup()
+    turtle.goto(-200, -200)
+    turtle.pendown()
+    sol(y_sol)
 
     # Dessin des 4 immeubles
 
