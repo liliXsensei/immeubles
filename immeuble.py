@@ -15,35 +15,25 @@ def immeuble(x, y_sol):
     Cette fonction dessine un immeuble Le nombre d'étage est compris aléatoirement entre 0 et 4
     La couleur de la façade et la couleur de la porte sont tirées au hasard
     '''
-    # Nombre d'étage (aléatoire)
-
-    pass
-
-    turtle.speed(100)
+    turtle.speed(200)
 
     # Autoriser les couleurs RVB 0-255
     turtle.colormode(255)
 
-    pass
-    # Nombre d'étage (aléatoire entre 1 et 5)
-    nb_etages = randint(1, 5)
+    # Nombre d'étage (aléatoire entre 0 et 4)
+    nb_etages = randint(0, 4)
 
     c_facade = couleur_aleatoire()
     c_porte = couleur_aleatoire()
 
-    pass
     # Dessin du RDC
     rdc(x, y_sol, c_facade, c_porte)
 
     # Dessin des étages
-
-    pass
     for niveau in range(1, nb_etages):
         etage(x, y_sol + 60, c_facade, niveau)
 
     # Dessin du toit
-
-    pass
     toit(x, y_sol, nb_etages)
 
 if __name__ == '__main__':
