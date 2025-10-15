@@ -15,14 +15,12 @@ def facade(x, y_sol, couleur, niveau):
     if niveau not in [0,1,2,3,4]:
         print("Niveau invalide")
     else:
-        for etage in range(niveau + 1):
-            turtle.color(couleur)
-            turtle.begin_fill()
-            rectangle(x, y_etage, 140, 60)
-            turtle.end_fill()
-            turtle.color("black")
-            rectangle(x, y_etage, 140, 60)
-            y_etage += 60
+        turtle.color(couleur)
+        turtle.begin_fill()
+        rectangle(x, y_etage, 140, 60)
+        turtle.end_fill()
+        turtle.color("black")
+        rectangle(x, y_etage, 140, 60)
 
 
 if __name__ == '__main__':
