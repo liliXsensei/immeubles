@@ -18,28 +18,30 @@ def etage(x, y_sol, couleur, niveau):
     Remarque
        Cette fonction dessine un étage d'un immeuble
     '''
+    turtle.speed(50)
     positions_x = [-40, 40, x]
     choix = 0 # choisit fenetre ou fenetre balcon
     indice = 0
     y_elements = y_sol
+
     # dessin des murs
-    if niveau in [1,2,3,4]:
-        for i in range(niveau - 1):
-            shuffle(positions_x)
-            facade(x, y_sol, couleur, niveau - 1)
-            # dessin des 3 Eléments
-            for i in range(3):
-                choix = randint(1, 2)
-                if choix == 1:
-                    fenetre(positions_x[indice], y_sol + 20)
-                elif choix == 2:
-                    fenetre_balcon(positions_x[indice], y_sol)
-                indice += 1
-            y_elements += 60
-            indice = 0
+    shuffle(positions_x)
+    facade(x, y_sol, couleur, niveau)
+    # dessin des 3 Eléments
+    for i in range(3):
+        choix = randint(1, 2)
+        if choix == 1:
+            fenetre(positions_x[indice], y_sol + 20)
+        elif choix == 2:
+            fenetre_balcon(positions_x[indice], y_sol)
+        indice += 1
+    y_elements += 60
+    indice = 0
             
 
 if __name__ == '__main__':
-    etage(0,0,"red",2)
+    etage(50,0,"blue",4)
+    etage(0,0,"red",1)
+    etage(100,0,"pink",2)
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
