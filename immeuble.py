@@ -30,8 +30,8 @@ def immeuble(x, y_sol):
     rdc(x, y_sol, c_facade, c_porte)
 
     # Dessin des étages
-    for niveau in range(1, nb_etages):
-        etage(x, y_sol + 60, c_facade, niveau)
+    for niveau in range(1, nb_etages + 1):
+        etage(x, y_sol, c_facade, niveau)
 
     # Dessin du toit
     toit(x, y_sol, nb_etages)
