@@ -13,6 +13,7 @@ def fenetre_balcon(x,y):
     '''
 
     # porte-fenetre
+    turtle.speed(100)
     turtle.fillcolor("grey90")
     turtle.begin_fill()
     turtle.penup() 
@@ -47,6 +48,35 @@ def fenetre_balcon(x,y):
 
 
 if __name__ == '__main__':
-    fenetre_balcon(0,0)
+    fenetre_balcon(-200, 0)
+    fenetre_balcon(-100, 0)
+    fenetre_balcon(0, 0)
+    fenetre_balcon(100, 0)
+    fenetre_balcon(200, 0)
+
+    fenetre_balcon(-200, 100)
+    fenetre_balcon(-100, 100)
+    fenetre_balcon(0, 100)
+    fenetre_balcon(100, 100)
+    fenetre_balcon(200, 100)
+
+    fenetre_balcon(-200, 200)
+    fenetre_balcon(-100, 200)
+    fenetre_balcon(0, 200)
+    fenetre_balcon(100, 200)
+    fenetre_balcon(200, 200)
+
+    fenetre_balcon(-200, -100)
+    fenetre_balcon(-100, -100)
+    fenetre_balcon(0, -100)
+    fenetre_balcon(100, -100)
+    fenetre_balcon(200, -100)
+
+    fenetre_balcon(-200, -200)
+    fenetre_balcon(-100, -200)
+    fenetre_balcon(0, -200)
+    fenetre_balcon(100, -200)
+    fenetre_balcon(200, -200)
+
     # On ferme la fenêtre s'il y a un clique gauche
     turtle.exitonclick()
